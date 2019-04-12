@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190412 11:50:46.622" generator="Robot 3.1.2.dev1 (Python 2.7.6 on linux2)">
+<robot rpa="false" generated="20190412 11:51:58.555" generator="Robot 3.1.2.dev1 (Python 2.7.6 on linux2)">
 <suite source="/home/amit/work/Robotframework/login_tests/valid_login.robot" id="s1" name="Valid Login">
 <test id="s1-t1" name="Valid Login">
 <kw name="Open Browser To Login Page">
@@ -9,18 +9,18 @@
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20190412 11:50:46.719" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:7272/'.</msg>
-<status status="PASS" endtime="20190412 11:50:52.483" starttime="20190412 11:50:46.718"></status>
+<msg timestamp="20190412 11:51:58.652" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:7272/'.</msg>
+<status status="PASS" endtime="20190412 11:52:04.498" starttime="20190412 11:51:58.652"></status>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <doc>Verifies that current page title equals ``title``.</doc>
 <arguments>
 <arg>Login Page</arg>
 </arguments>
-<msg timestamp="20190412 11:50:52.487" level="INFO">Page title is 'Login Page'.</msg>
-<status status="PASS" endtime="20190412 11:50:52.487" starttime="20190412 11:50:52.484"></status>
+<msg timestamp="20190412 11:52:04.504" level="INFO">Page title is 'Login Page'.</msg>
+<status status="PASS" endtime="20190412 11:52:04.504" starttime="20190412 11:52:04.498"></status>
 </kw>
-<status status="PASS" endtime="20190412 11:50:52.488" starttime="20190412 11:50:46.718"></status>
+<status status="PASS" endtime="20190412 11:52:04.504" starttime="20190412 11:51:58.651"></status>
 </kw>
 <kw name="Input Username">
 <arguments>
@@ -32,10 +32,10 @@
 <arg>username_field</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20190412 11:50:52.490" level="INFO">Typing text 'demo1' into text field 'username_field'.</msg>
-<status status="PASS" endtime="20190412 11:50:52.549" starttime="20190412 11:50:52.489"></status>
+<msg timestamp="20190412 11:52:04.505" level="INFO">Typing text 'demo1' into text field 'username_field'.</msg>
+<status status="PASS" endtime="20190412 11:52:04.551" starttime="20190412 11:52:04.505"></status>
 </kw>
-<status status="PASS" endtime="20190412 11:50:52.550" starttime="20190412 11:50:52.488"></status>
+<status status="PASS" endtime="20190412 11:52:04.551" starttime="20190412 11:52:04.504"></status>
 </kw>
 <kw name="Input Password">
 <arguments>
@@ -47,10 +47,10 @@
 <arg>password_field</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20190412 11:50:52.551" level="INFO">Typing text 'mode' into text field 'password_field'.</msg>
-<status status="PASS" endtime="20190412 11:50:52.589" starttime="20190412 11:50:52.550"></status>
+<msg timestamp="20190412 11:52:04.552" level="INFO">Typing text 'mode' into text field 'password_field'.</msg>
+<status status="PASS" endtime="20190412 11:52:04.577" starttime="20190412 11:52:04.552"></status>
 </kw>
-<status status="PASS" endtime="20190412 11:50:52.589" starttime="20190412 11:50:52.550"></status>
+<status status="PASS" endtime="20190412 11:52:04.577" starttime="20190412 11:52:04.551"></status>
 </kw>
 <kw name="Input Number">
 <arguments>
@@ -62,10 +62,10 @@
 <arg>usernumber_field</arg>
 <arg>${number}</arg>
 </arguments>
-<msg timestamp="20190412 11:50:52.590" level="INFO">Typing text '1234567890' into text field 'usernumber_field'.</msg>
-<status status="PASS" endtime="20190412 11:50:52.630" starttime="20190412 11:50:52.590"></status>
+<msg timestamp="20190412 11:52:04.578" level="INFO">Typing text '1234567890' into text field 'usernumber_field'.</msg>
+<status status="PASS" endtime="20190412 11:52:04.603" starttime="20190412 11:52:04.578"></status>
 </kw>
-<status status="PASS" endtime="20190412 11:50:52.630" starttime="20190412 11:50:52.590"></status>
+<status status="PASS" endtime="20190412 11:52:04.603" starttime="20190412 11:52:04.578"></status>
 </kw>
 <kw name="Submit Credentials">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -73,10 +73,10 @@
 <arguments>
 <arg>login_button</arg>
 </arguments>
-<msg timestamp="20190412 11:50:52.631" level="INFO">Clicking button 'login_button'.</msg>
-<status status="PASS" endtime="20190412 11:50:54.097" starttime="20190412 11:50:52.630"></status>
+<msg timestamp="20190412 11:52:04.604" level="INFO">Clicking button 'login_button'.</msg>
+<status status="PASS" endtime="20190412 11:52:06.077" starttime="20190412 11:52:04.604"></status>
 </kw>
-<status status="PASS" endtime="20190412 11:50:54.097" starttime="20190412 11:50:52.630"></status>
+<status status="PASS" endtime="20190412 11:52:06.077" starttime="20190412 11:52:04.603"></status>
 </kw>
 <kw name="Welcome Page Should Be Open">
 <kw name="Title Should Be" library="SeleniumLibrary">
@@ -84,22 +84,22 @@
 <arguments>
 <arg>Welcome Page</arg>
 </arguments>
-<msg timestamp="20190412 11:50:54.103" level="INFO">Page title is 'Welcome Page'.</msg>
-<status status="PASS" endtime="20190412 11:50:54.103" starttime="20190412 11:50:54.098"></status>
+<msg timestamp="20190412 11:52:06.084" level="INFO">Page title is 'Welcome Page'.</msg>
+<status status="PASS" endtime="20190412 11:52:06.085" starttime="20190412 11:52:06.079"></status>
 </kw>
-<status status="PASS" endtime="20190412 11:50:54.103" starttime="20190412 11:50:54.097"></status>
+<status status="PASS" endtime="20190412 11:52:06.085" starttime="20190412 11:52:06.078"></status>
 </kw>
 <kw type="teardown" name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20190412 11:50:54.297" starttime="20190412 11:50:54.104"></status>
+<status status="PASS" endtime="20190412 11:52:06.236" starttime="20190412 11:52:06.085"></status>
 </kw>
-<status status="PASS" endtime="20190412 11:50:54.298" critical="yes" starttime="20190412 11:50:46.717"></status>
+<status status="PASS" endtime="20190412 11:52:06.237" critical="yes" starttime="20190412 11:51:58.651"></status>
 </test>
 <doc>A test suite with a single test for valid login.
 
 This test has a workflow that is created using keywords in
 the imported resource file.</doc>
-<status status="PASS" endtime="20190412 11:50:54.300" starttime="20190412 11:50:46.622"></status>
+<status status="PASS" endtime="20190412 11:52:06.239" starttime="20190412 11:51:58.555"></status>
 </suite>
 <statistics>
 <total>
