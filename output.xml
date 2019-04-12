@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190412 11:38:49.491" generator="Robot 3.1.2.dev1 (Python 2.7.6 on linux2)">
+<suite source="/home/amit/work/Robotframework/login_tests/valid_login.robot" id="s1" name="Valid Login">
+<test id="s1-t1" name="Valid Login">
+<kw name="Open Browser To Login Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190412 11:38:50.419" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:7272/'.</msg>
+<status status="PASS" endtime="20190412 11:39:08.817" starttime="20190412 11:38:50.419"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Login Page</arg>
+</arguments>
+<msg timestamp="20190412 11:39:08.824" level="INFO">Page title is 'Login Page'.</msg>
+<status status="PASS" endtime="20190412 11:39:08.825" starttime="20190412 11:39:08.817"></status>
+</kw>
+<status status="PASS" endtime="20190412 11:39:08.825" starttime="20190412 11:38:50.418"></status>
+</kw>
+<kw name="Input Username">
+<arguments>
+<arg>demo1</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>username_field</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20190412 11:39:08.826" level="INFO">Typing text 'demo1' into text field 'username_field'.</msg>
+<status status="PASS" endtime="20190412 11:39:08.970" starttime="20190412 11:39:08.826"></status>
+</kw>
+<status status="PASS" endtime="20190412 11:39:08.970" starttime="20190412 11:39:08.825"></status>
+</kw>
+<kw name="Input Password">
+<arguments>
+<arg>mode</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>password_field</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20190412 11:39:08.971" level="INFO">Typing text 'mode' into text field 'password_field'.</msg>
+<status status="PASS" endtime="20190412 11:39:08.995" starttime="20190412 11:39:08.971"></status>
+</kw>
+<status status="PASS" endtime="20190412 11:39:08.995" starttime="20190412 11:39:08.970"></status>
+</kw>
+<kw name="Input Number">
+<arguments>
+<arg>1234567890</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>usernumber_field</arg>
+<arg>${number}</arg>
+</arguments>
+<msg timestamp="20190412 11:39:08.996" level="INFO">Typing text '1234567890' into text field 'usernumber_field'.</msg>
+<status status="PASS" endtime="20190412 11:39:09.030" starttime="20190412 11:39:08.996"></status>
+</kw>
+<status status="PASS" endtime="20190412 11:39:09.030" starttime="20190412 11:39:08.996"></status>
+</kw>
+<kw name="Submit Credentials">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>login_button</arg>
+</arguments>
+<msg timestamp="20190412 11:39:09.031" level="INFO">Clicking button 'login_button'.</msg>
+<status status="PASS" endtime="20190412 11:39:10.102" starttime="20190412 11:39:09.031"></status>
+</kw>
+<status status="PASS" endtime="20190412 11:39:10.102" starttime="20190412 11:39:09.030"></status>
+</kw>
+<kw name="Welcome Page Should Be Open">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Welcome Page</arg>
+</arguments>
+<msg timestamp="20190412 11:39:10.112" level="INFO">Page title is 'Welcome Page'.</msg>
+<status status="PASS" endtime="20190412 11:39:10.112" starttime="20190412 11:39:10.103"></status>
+</kw>
+<status status="PASS" endtime="20190412 11:39:10.112" starttime="20190412 11:39:10.103"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190412 11:39:10.324" starttime="20190412 11:39:10.113"></status>
+</kw>
+<status status="PASS" endtime="20190412 11:39:10.324" critical="yes" starttime="20190412 11:38:50.418"></status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="PASS" endtime="20190412 11:39:10.325" starttime="20190412 11:38:49.494"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Valid Login" pass="1">Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
