@@ -279,3 +279,51 @@ JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: Type
 [GFX1-]: Receive IPC close with reason=AbnormalShutdown
 [Child 7854, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-ZFg_cv/firefox-58.0~b5+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
 [Child 7816, Chrome_ChildThread] WARNING: pipe error (20): Connection reset by peer: file /build/firefox-ZFg_cv/firefox-58.0~b5+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1555050181883	geckodriver	INFO	geckodriver 0.18.0
+1555050181886	geckodriver	INFO	Listening on 127.0.0.1:49507
+1555050183007	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1555050183209	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1555050183210	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1555050183212	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1555050183212	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1555050183787	Marionette	INFO	Enabled via --marionette
+
+(firefox:8023): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:8023): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:8023): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:8023): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:8023): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:8023): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:8070): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:8070): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:8070): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:8070): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:8070): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:8070): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1555050187416	Marionette	INFO	Listening on port 43483
+1555050187439	Marionette	WARN	TLS certificate errors will be ignored for this session
+1555050187512	Marionette	DEBUG	Register listener.js for window 2147483649
+1555050187538	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1555050187548	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1555050187594	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:7272/"
+1555050187607	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:7272/"
+1555050187748	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:7272/"
+1555050188924	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:7272/"
+1555050188925	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:7272/"
+1555050188930	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:7272/welcome.html"
+1555050188946	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:7272/welcome.html"
+1555050189096	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 125"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:125 < onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:141 < _middleware/</<()@resource://activity-stream/lib/Store.jsm:51 < Store/this[method]()@resource://activity-stream/lib/Store.jsm:30 < uninit()@resource://activity-stream/lib/Store.jsm:153 < uninit()@resource://activity-stream/lib/ActivityStream.jsm:267 < uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:80 < shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:196 < callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4404 < observe()@resource://gre/modules/addons/XPIProvider.jsm:2270 < GeckoDriver.prototype.quit()@driver.js:3386 < despatch()@server.js:560 < execute()@server.js:534 < onPacket/<()@server.js:509 < onPacket()@server.js:508 < _onJSONObjectReady/<()@transport.js:500
+[Child 8070, Chrome_ChildThread] WARNING: pipe error (18): Connection reset by peer: file /build/firefox-ZFg_cv/firefox-58.0~b5+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 8070, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-ZFg_cv/firefox-58.0~b5+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
