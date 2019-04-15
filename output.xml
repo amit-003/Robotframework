@@ -1,30 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190412 11:53:01.782" generator="Robot 3.1.2.dev1 (Python 2.7.6 on linux2)">
-<suite source="/home/amit/work/Robotframework/login_tests/valid_login.robot" id="s1" name="Valid Login">
-<test id="s1-t1" name="Valid Login">
-<kw name="Open Browser To Login Page">
+<robot rpa="false" generated="20190415 12:03:25.432" generator="Robot 3.1.2.dev1 (Python 2.7.6 on linux2)">
+<suite source="/home/amit/work/Robotframework/login_tests" id="s1" name="Login Tests">
+<suite source="/home/amit/work/Robotframework/login_tests/gherkin_login.robot" id="s1-s1" name="Gherkin Login">
+<test id="s1-s1-t1" name="Valid Login">
+<kw name="Given browser is opened to login page">
+<kw name="Open Browser To Login Page" library="resource">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20190412 11:53:01.879" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:7272/'.</msg>
-<status status="PASS" endtime="20190412 11:53:07.611" starttime="20190412 11:53:01.878"></status>
+<msg timestamp="20190415 12:03:25.538" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:7272/'.</msg>
+<status status="PASS" endtime="20190415 12:03:33.103" starttime="20190415 12:03:25.537"></status>
 </kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190415 12:03:36.628" starttime="20190415 12:03:33.104"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20190415 12:03:36.630" starttime="20190415 12:03:36.629"></status>
+</kw>
+<kw name="Login Page Should Be Open" library="resource">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <doc>Verifies that current page title equals ``title``.</doc>
 <arguments>
 <arg>Login Page</arg>
 </arguments>
-<msg timestamp="20190412 11:53:07.625" level="INFO">Page title is 'Login Page'.</msg>
-<status status="PASS" endtime="20190412 11:53:07.625" starttime="20190412 11:53:07.612"></status>
+<msg timestamp="20190415 12:03:36.646" level="INFO">Page title is 'Login Page'.</msg>
+<status status="PASS" endtime="20190415 12:03:36.647" starttime="20190415 12:03:36.632"></status>
 </kw>
-<status status="PASS" endtime="20190412 11:53:07.625" starttime="20190412 11:53:01.878"></status>
+<status status="PASS" endtime="20190415 12:03:36.647" starttime="20190415 12:03:36.631"></status>
 </kw>
-<kw name="Input Username">
+<status status="PASS" endtime="20190415 12:03:36.648" starttime="20190415 12:03:25.537"></status>
+</kw>
+<status status="PASS" endtime="20190415 12:03:36.648" starttime="20190415 12:03:25.537"></status>
+</kw>
+<kw name="When user &quot;demo1&quot; logs in with password &quot;mode&quot;">
+<kw name="Input Username" library="resource">
 <arguments>
-<arg>demo1</arg>
+<arg>${username}</arg>
 </arguments>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -32,14 +51,14 @@
 <arg>username_field</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20190412 11:53:07.627" level="INFO">Typing text 'demo1' into text field 'username_field'.</msg>
-<status status="PASS" endtime="20190412 11:53:07.679" starttime="20190412 11:53:07.626"></status>
+<msg timestamp="20190415 12:03:36.654" level="INFO">Typing text 'demo1' into text field 'username_field'.</msg>
+<status status="PASS" endtime="20190415 12:03:36.758" starttime="20190415 12:03:36.653"></status>
 </kw>
-<status status="PASS" endtime="20190412 11:53:07.679" starttime="20190412 11:53:07.625"></status>
+<status status="PASS" endtime="20190415 12:03:36.759" starttime="20190415 12:03:36.651"></status>
 </kw>
-<kw name="Input Password">
+<kw name="Input Password" library="resource">
 <arguments>
-<arg>mode</arg>
+<arg>${password}</arg>
 </arguments>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -47,71 +66,167 @@
 <arg>password_field</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20190412 11:53:07.680" level="INFO">Typing text 'mode' into text field 'password_field'.</msg>
-<status status="PASS" endtime="20190412 11:53:07.706" starttime="20190412 11:53:07.679"></status>
+<msg timestamp="20190415 12:03:36.760" level="INFO">Typing text 'mode' into text field 'password_field'.</msg>
+<status status="PASS" endtime="20190415 12:03:36.783" starttime="20190415 12:03:36.760"></status>
 </kw>
-<status status="PASS" endtime="20190412 11:53:07.706" starttime="20190412 11:53:07.679"></status>
+<status status="PASS" endtime="20190415 12:03:36.783" starttime="20190415 12:03:36.759"></status>
 </kw>
-<kw name="Input Number">
-<arguments>
-<arg>1234567890</arg>
-</arguments>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>usernumber_field</arg>
-<arg>${number}</arg>
-</arguments>
-<msg timestamp="20190412 11:53:07.707" level="INFO">Typing text '1234567890' into text field 'usernumber_field'.</msg>
-<status status="PASS" endtime="20190412 11:53:07.732" starttime="20190412 11:53:07.707"></status>
-</kw>
-<status status="PASS" endtime="20190412 11:53:07.732" starttime="20190412 11:53:07.707"></status>
-</kw>
-<kw name="Submit Credentials">
+<kw name="Submit Credentials" library="resource">
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>login_button</arg>
 </arguments>
-<msg timestamp="20190412 11:53:07.733" level="INFO">Clicking button 'login_button'.</msg>
-<status status="PASS" endtime="20190412 11:53:09.070" starttime="20190412 11:53:07.733"></status>
+<msg timestamp="20190415 12:03:36.784" level="INFO">Clicking button 'login_button'.</msg>
+<status status="PASS" endtime="20190415 12:03:37.595" starttime="20190415 12:03:36.783"></status>
 </kw>
-<status status="PASS" endtime="20190412 11:53:09.070" starttime="20190412 11:53:07.733"></status>
+<status status="PASS" endtime="20190415 12:03:37.595" starttime="20190415 12:03:36.783"></status>
 </kw>
-<kw name="Welcome Page Should Be Open">
-<kw name="Title Should Be" library="SeleniumLibrary">
-<doc>Verifies that current page title equals ``title``.</doc>
+<status status="PASS" endtime="20190415 12:03:37.596" starttime="20190415 12:03:36.649"></status>
+</kw>
+<kw name="Then welcome page should be open" library="resource">
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that current URL is exactly ``url``.</doc>
 <arguments>
-<arg>Welcome Page</arg>
+<arg>${WELCOME URL}</arg>
 </arguments>
-<msg timestamp="20190412 11:53:09.076" level="INFO">Page title is 'Welcome Page'.</msg>
-<status status="PASS" endtime="20190412 11:53:09.076" starttime="20190412 11:53:09.071"></status>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190415 12:03:37.646" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190415 12:03:37.647" starttime="20190415 12:03:37.603"></status>
 </kw>
-<status status="PASS" endtime="20190412 11:53:09.076" starttime="20190412 11:53:09.070"></status>
+<msg timestamp="20190415 12:03:37.647" level="FAIL">Location should have been 'http://localhost:7272/welcome.html' but was 'http://localhost:7272/error.html'.</msg>
+<status status="FAIL" endtime="20190415 12:03:37.647" starttime="20190415 12:03:37.597"></status>
+</kw>
+<status status="FAIL" endtime="20190415 12:03:37.647" starttime="20190415 12:03:37.596"></status>
 </kw>
 <kw type="teardown" name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20190412 11:53:09.238" starttime="20190412 11:53:09.077"></status>
+<status status="PASS" endtime="20190415 12:03:37.840" starttime="20190415 12:03:37.648"></status>
 </kw>
-<status status="PASS" endtime="20190412 11:53:09.239" critical="yes" starttime="20190412 11:53:01.878"></status>
+<status status="FAIL" endtime="20190415 12:03:37.841" critical="yes" starttime="20190415 12:03:25.536">Location should have been 'http://localhost:7272/welcome.html' but was 'http://localhost:7272/error.html'.</status>
+</test>
+<doc>A test suite with a single Gherkin style test.
+
+This test is functionally identical to the example in
+valid_login.robot file.</doc>
+<status status="FAIL" endtime="20190415 12:03:37.844" starttime="20190415 12:03:25.450"></status>
+</suite>
+<suite source="/home/amit/work/Robotframework/login_tests/invalid_login.robot" id="s1-s2" name="Invalid Login">
+<kw type="setup" name="Open Browser To Login Page" library="resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190415 12:03:37.863" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:7272/'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<status status="FAIL" endtime="20190415 12:03:42.871" starttime="20190415 12:03:42.870"></status>
+</kw>
+<msg timestamp="20190415 12:03:42.871" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<status status="FAIL" endtime="20190415 12:03:42.871" starttime="20190415 12:03:37.862"></status>
+</kw>
+<status status="FAIL" endtime="20190415 12:03:42.871" starttime="20190415 12:03:37.862"></status>
+</kw>
+<test id="s1-s2-t1" name="Invalid Username">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" endtime="20190415 12:03:42.872" critical="yes" starttime="20190415 12:03:42.871">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-t2" name="Invalid Password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" endtime="20190415 12:03:42.873" critical="yes" starttime="20190415 12:03:42.873">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-t3" name="Invalid Username And Password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" endtime="20190415 12:03:42.874" critical="yes" starttime="20190415 12:03:42.874">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-t4" name="Empty Username">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" endtime="20190415 12:03:42.875" critical="yes" starttime="20190415 12:03:42.875">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-t5" name="Empty Password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" endtime="20190415 12:03:42.876" critical="yes" starttime="20190415 12:03:42.876">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-t6" name="Empty Username And Password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" endtime="20190415 12:03:42.877" critical="yes" starttime="20190415 12:03:42.876">Test execution stopped due to a fatal error.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190415 12:03:42.878" starttime="20190415 12:03:42.878"></status>
+</kw>
+<doc>A test suite containing tests related to invalid login.
+
+These tests are data-driven by their nature. They use a single
+keyword, specified with Test Template setting, that is called
+with different arguments to cover different scenarios.
+
+This suite also demonstrates using setups and teardowns in
+different levels.</doc>
+<status status="FAIL" endtime="20190415 12:03:42.878" starttime="20190415 12:03:37.854">Suite setup failed:
+Execution terminated by signal</status>
+</suite>
+<suite source="/home/amit/work/Robotframework/login_tests/login_page.robot" id="s1-s3" name="Login Page">
+<test id="s1-s3-t1" name="Valid Login">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" endtime="20190415 12:03:42.882" critical="yes" starttime="20190415 12:03:42.882">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>A test suite containing tests related to login page.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" endtime="20190415 12:03:42.883" starttime="20190415 12:03:42.881"></status>
+</suite>
+<suite source="/home/amit/work/Robotframework/login_tests/valid_login.robot" id="s1-s4" name="Valid Login">
+<test id="s1-s4-t1" name="Valid Login">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" endtime="20190415 12:03:42.886" critical="yes" starttime="20190415 12:03:42.885">Test execution stopped due to a fatal error.</status>
 </test>
 <doc>A test suite with a single test for valid login.
 
 This test has a workflow that is created using keywords in
 the imported resource file.</doc>
-<status status="PASS" endtime="20190412 11:53:09.242" starttime="20190412 11:53:01.782"></status>
+<status status="FAIL" endtime="20190415 12:03:42.886" starttime="20190415 12:03:42.884"></status>
+</suite>
+<status status="FAIL" endtime="20190415 12:03:42.889" starttime="20190415 12:03:25.433"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="1">Critical Tests</stat>
-<stat fail="0" pass="1">All Tests</stat>
+<stat fail="9" pass="0">Critical Tests</stat>
+<stat fail="9" pass="0">All Tests</stat>
 </total>
 <tag>
+<stat info="combined" fail="1" combined="NOT robot:exit" pass="0">NOT robot:exit</stat>
+<stat fail="8" pass="0">robot:exit</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Valid Login" pass="1">Valid Login</stat>
+<stat fail="9" id="s1" name="Login Tests" pass="0">Login Tests</stat>
+<stat fail="1" id="s1-s1" name="Gherkin Login" pass="0">Login Tests.Gherkin Login</stat>
+<stat fail="6" id="s1-s2" name="Invalid Login" pass="0">Login Tests.Invalid Login</stat>
+<stat fail="1" id="s1-s3" name="Login Page" pass="0">Login Tests.Login Page</stat>
+<stat fail="1" id="s1-s4" name="Valid Login" pass="0">Login Tests.Valid Login</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20190415 12:03:42.871" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
 </errors>
 </robot>
