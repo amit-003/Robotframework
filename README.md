@@ -31,7 +31,7 @@ __ https://github.com/robotframework/SeleniumLibrary#installation
 
  Note: Before running test cases run command line::
 
-    python demoapp/server.py
+    python app/server.py
 
 
 
