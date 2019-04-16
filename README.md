@@ -3,7 +3,6 @@ Web testing with Robot Framework and SeleniumLibrary
 
 
 
-
 `installation instructions`__.
 
 In practice it is easiest to install Robot Framework and
@@ -14,6 +13,9 @@ these commands::
     pip install robotframework
     pip install robotframework-seleniumlibrary
 
+Note:
+1. clone git repository (git clone https://github.com/amit-003/Robotframework.git)
+2. cd Robotframework
 
 
  Note: Before running test cases run command line::
