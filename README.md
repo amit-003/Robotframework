@@ -46,3 +46,38 @@ Run ``robot --help`` for more information about the command line usage and see
 
 
 
+Overview:
+
+It's main use is to enable writing acceptance tests with a high level of abstraction for software products.
+
+The framework requires less technical skill than programming language-based frameworks, and so can be used by team members who have very little programming experience. For example, an agile team product owner could express acceptance tests using the framework, without having to know the details of how the product is implemented.
+On the other hand, because of its keyword-based design, those with a high degree of technical skill can write keywords in their language of choice to test low level functions, and even do unit and integration testing if so desired.
+
+Uses:
+
+Because of its flexibility, robot framework can be used to test desktop applications, web applications, mobile applications, and RESTful and SOAP-based services. Because it provides an abstraction layer on top of the physical implementation of the system under test, it is possible to write tests that work cross-platform (ie: the same test case could be used to test both an android and iOS app, or for testing a web app that runs on chrome, firefox and safari).
+Although robot framework is often used to test browser-based applications, it has been used to test databases, mobile devices, calculators, and many other things.
+
+Extensibility:
+
+One of the great strengths of the robot framework is that it is highly extensible. Many of the features mentioned above are implemented as libraries. For example, you can plug in a library to use selenium to drive a browser. You can plug in a database library to directly access databases. There are libraries to support testing desktop apps, services, and many more.
+
+Example
+To illustrate how abstract a robot test case can be, a BDD-style testcase might look -- literally -- like this:
+
+Given I am on the application login screen
+When I enter a valid username and password
+And I press the "login button"
+Then I should be logged in
+And my personal dashboard should be displayed
+
+Note: this isn't the only way to write a test. Robot is very flexible, allowing you to choose between BDD (Behavior Driven Development) style, a traditional procedural style, or in a data-driven style.
+
+The framework provides the infrastructure for converting those statements to actionable items. Ultimately they get boiled down to a function call -- either from an external library, or one provided by the development team. Those functions typically are written in python, but can be written in Java, a .NET language, or other languages through an interface, depending on how you actually run the test.
+
+Reporting:
+In addition to being able to run tests, robot framework provides reports and logs that can be used to visualize the state of the product. Logs provide details of every single keyword and function call, reports show the status of complete suites and test cases, and can provide summary information based on arbitrary tags.
+
+
+
+
